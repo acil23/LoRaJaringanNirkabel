@@ -1,6 +1,6 @@
-package loraforestmonitoring;
+package lorajaringannirkabel;
 
-network LoRaForestNetwork
+network LoRaJaringanNirkabel
 {
     submodules:
         sensors[13]: LoRaSensorNode {

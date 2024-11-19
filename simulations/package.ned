@@ -1,3 +1,3 @@
-package loraforestmonitoring.simulations;
+package lorajaringannirkabel.simulations;
 
 @license(LGPL);

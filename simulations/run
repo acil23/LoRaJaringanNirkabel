@@ -1,4 +1,4 @@
 #!/bin/sh
 cd `dirname $0`
-../src/loraforestmonitoring -n .:../src $*
-# for shared lib, use: opp_run -l ../src/loraforestmonitoring -n .:../src $*
+../src/lorajaringannirkabel -n .:../src $*
+# for shared lib, use: opp_run -l ../src/lorajaringannirkabel -n .:../src $*

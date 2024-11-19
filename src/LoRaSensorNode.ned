@@ -1,4 +1,4 @@
-package loraforestmonitoring;
+package lorajaringannirkabel;
 
 simple LoRaSensorNode
 {
