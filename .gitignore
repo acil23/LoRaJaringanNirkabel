@@ -1,4 +1,4 @@
-
-.cproject
-.settings/language.settings.xml
-out/
+inet4.4/out/clang-debug/src/*
+inet4.4/src/*
+inet4.5/out/clang-debug/src/*
+inet4.5/src/*

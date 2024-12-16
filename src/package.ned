@@ -1,3 +1,0 @@
-package lorajaringannirkabel;
-
-@license(LGPL);
