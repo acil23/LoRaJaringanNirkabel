@@ -1,0 +1,6 @@
+10:36:09 **** Incremental Build of configuration release for project openstreetmap ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+
+10:36:09 Build Finished. 0 errors, 0 warnings. (took 123ms)
+

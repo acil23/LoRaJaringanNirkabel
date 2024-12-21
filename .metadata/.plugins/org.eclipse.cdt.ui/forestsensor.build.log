@@ -1,0 +1,17 @@
+12:37:31 **** Incremental Build of configuration release for project forestsensor ****
+make MODE=release all 
+cd src && make
+make[1]: Entering directory '/home/foxcat/Downloads/omnetpp-6.1/project/forestsensor/src'
+SensorApplication.cc
+In file included from SensorApplication.cc:1:
+./SensorApplication.h:6:10: fatal error: 'inet/common/lifecycle/ILifecycle.h' file not found
+    6 | #include "inet/common/lifecycle/ILifecycle.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [Makefile:114: ../out/clang-release/src/SensorApplication.o] Error 1
+make[1]: Leaving directory '/home/foxcat/Downloads/omnetpp-6.1/project/forestsensor/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+
+12:37:32 Build Failed. 3 errors, 0 warnings. (took 1s.499ms)
+

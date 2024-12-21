@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hasShownOverlayPopupBefore" value="true"/>
+	<item key="replaceBarOpen" value="true"/>
+	<list key="replacehistory">
+		<item value="11dBm"/>
+		<item value="8dBm"/>
+		<item value="10dBm"/>
+		<item value="14dBm"/>
+		<item value="inet::physicallayer::IRadio"/>
+		<item value="sensor"/>
+		<item value="Nodes"/>
+		<item value="ForestNetwork"/>
+		<item value="loRaNode"/>
+	</list>
+	<list key="searchhistory">
+		<item value="lastPowerConsumption"/>
+		<item value="updateEnergyForState"/>
+		<item value="energyConsumedPerState"/>
+		<item value="getPowerConsumption"/>
+		<item value="updateenerg"/>
+		<item value="offPowerConsumption"/>
+		<item value="getpower"/>
+		<item value="determine"/>
+		<item value="receive"/>
+		<item value="update"/>
+		<item value="isCondensating"/>
+		<item value="5dBm"/>
+		<item value="2dBm"/>
+		<item value="8dBm"/>
+		<item value="11dBm"/>
+	</list>
+</section>

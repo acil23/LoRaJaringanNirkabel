@@ -1,0 +1,10 @@
+10:36:09 **** Incremental Build of configuration release for project flora ****
+make MODE=release all 
+make[1]: Entering directory '/home/foxcat/Downloads/omnetpp-6.1/project/flora/src'
+Creating shared library: ../out/clang-release/src/libflora.so
+Makefile:144: warning: pattern recipe did not update peer target '../out/clang-release/src/libflora.dll.a'.
+Makefile:144: warning: pattern recipe did not update peer target '../out/clang-release/src/libflora.def'.
+make[1]: Leaving directory '/home/foxcat/Downloads/omnetpp-6.1/project/flora/src'
+
+10:36:09 Build Finished. 0 errors, 2 warnings. (took 423ms)
+
