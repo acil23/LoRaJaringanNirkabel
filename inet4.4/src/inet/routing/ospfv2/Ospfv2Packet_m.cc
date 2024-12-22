@@ -1772,12 +1772,12 @@ unsigned int Ospfv2LsaHeaderDescriptor::getFieldTypeFlags(int field) const
     static unsigned int fieldTypeFlags[] = {
         FD_ISEDITABLE,    // FIELD_lsAge
         FD_ISCOMPOUND,    // FIELD_lsOptions
-        FD_ISEDITABLE,    // FIELD_lsType
+        0,    // FIELD_lsType
         0,    // FIELD_linkStateID
         0,    // FIELD_advertisingRouter
         FD_ISEDITABLE,    // FIELD_lsSequenceNumber
         FD_ISEDITABLE,    // FIELD_lsCrc
-        FD_ISEDITABLE,    // FIELD_lsCrcMode
+        0,    // FIELD_lsCrcMode
         FD_ISEDITABLE,    // FIELD_lsaLength
     };
     return (field >= 0 && field < 9) ? fieldTypeFlags[field] : 0;
@@ -1963,10 +1963,8 @@ void Ospfv2LsaHeaderDescriptor::setFieldValueAsString(omnetpp::any_ptr object, i
     Ospfv2LsaHeader *pp = omnetpp::fromAnyPtr<Ospfv2LsaHeader>(object); (void)pp;
     switch (field) {
         case FIELD_lsAge: pp->setLsAge(string2ulong(value)); break;
-        case FIELD_lsType: pp->setLsType((inet::ospfv2::Ospfv2LsaType)string2enum(value, "inet::ospfv2::Ospfv2LsaType")); break;
         case FIELD_lsSequenceNumber: pp->setLsSequenceNumber(string2long(value)); break;
         case FIELD_lsCrc: pp->setLsCrc(string2ulong(value)); break;
-        case FIELD_lsCrcMode: pp->setLsCrcMode((inet::CrcMode)string2enum(value, "inet::CrcMode")); break;
         case FIELD_lsaLength: pp->setLsaLength(string2ulong(value)); break;
         default: throw omnetpp::cRuntimeError("Cannot set field %d of class 'Ospfv2LsaHeader'", field);
     }
@@ -2008,10 +2006,8 @@ void Ospfv2LsaHeaderDescriptor::setFieldValue(omnetpp::any_ptr object, int field
     Ospfv2LsaHeader *pp = omnetpp::fromAnyPtr<Ospfv2LsaHeader>(object); (void)pp;
     switch (field) {
         case FIELD_lsAge: pp->setLsAge(omnetpp::checked_int_cast<unsigned short>(value.intValue())); break;
-        case FIELD_lsType: pp->setLsType(static_cast<inet::ospfv2::Ospfv2LsaType>(value.intValue())); break;
         case FIELD_lsSequenceNumber: pp->setLsSequenceNumber(omnetpp::checked_int_cast<int32_t>(value.intValue())); break;
         case FIELD_lsCrc: pp->setLsCrc(omnetpp::checked_int_cast<uint16_t>(value.intValue())); break;
-        case FIELD_lsCrcMode: pp->setLsCrcMode(static_cast<inet::CrcMode>(value.intValue())); break;
         case FIELD_lsaLength: pp->setLsaLength(omnetpp::checked_int_cast<uint16_t>(value.intValue())); break;
         default: throw omnetpp::cRuntimeError("Cannot set field %d of class 'Ospfv2LsaHeader'", field);
     }
@@ -3018,7 +3014,7 @@ unsigned int Ospfv2LinkDescriptor::getFieldTypeFlags(int field) const
     static unsigned int fieldTypeFlags[] = {
         0,    // FIELD_linkID
         FD_ISEDITABLE,    // FIELD_linkData
-        FD_ISEDITABLE,    // FIELD_type
+        0,    // FIELD_type
         FD_ISEDITABLE,    // FIELD_numberOfTOS
         FD_ISEDITABLE,    // FIELD_linkCost
         FD_ISARRAY | FD_ISCOMPOUND | FD_ISRESIZABLE,    // FIELD_tosData
@@ -3189,7 +3185,6 @@ void Ospfv2LinkDescriptor::setFieldValueAsString(omnetpp::any_ptr object, int fi
     Ospfv2Link *pp = omnetpp::fromAnyPtr<Ospfv2Link>(object); (void)pp;
     switch (field) {
         case FIELD_linkData: pp->setLinkData(string2ulong(value)); break;
-        case FIELD_type: pp->setType((inet::ospfv2::LinkType)string2enum(value, "inet::ospfv2::LinkType")); break;
         case FIELD_numberOfTOS: pp->setNumberOfTOS(string2ulong(value)); break;
         case FIELD_linkCost: pp->setLinkCost(string2ulong(value)); break;
         default: throw omnetpp::cRuntimeError("Cannot set field %d of class 'Ospfv2Link'", field);
@@ -3229,7 +3224,6 @@ void Ospfv2LinkDescriptor::setFieldValue(omnetpp::any_ptr object, int field, int
     Ospfv2Link *pp = omnetpp::fromAnyPtr<Ospfv2Link>(object); (void)pp;
     switch (field) {
         case FIELD_linkData: pp->setLinkData(omnetpp::checked_int_cast<unsigned long>(value.intValue())); break;
-        case FIELD_type: pp->setType(static_cast<inet::ospfv2::LinkType>(value.intValue())); break;
         case FIELD_numberOfTOS: pp->setNumberOfTOS(omnetpp::checked_int_cast<unsigned char>(value.intValue())); break;
         case FIELD_linkCost: pp->setLinkCost(omnetpp::checked_int_cast<unsigned long>(value.intValue())); break;
         default: throw omnetpp::cRuntimeError("Cannot set field %d of class 'Ospfv2Link'", field);
