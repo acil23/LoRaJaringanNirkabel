@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;flora/simulations/openstreetmap.xml&apos; to &apos;openstreetmap.osm&apos;" description="Rename resource &apos;openstreetmap.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="simulations/openstreetmap.xml" name="openstreetmap.osm" stamp="1732507863406" updateReferences="true"/>
-</session>
