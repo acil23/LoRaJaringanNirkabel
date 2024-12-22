@@ -4,7 +4,6 @@
 	<comment></comment>
 	<projects>
 		<project>inet4.4</project>
-		<project>openstreetmap</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
